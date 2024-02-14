@@ -57,7 +57,7 @@ const Page = () => {
 
 
   const generatepostobjecturl = async () => {
-    let res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/file/generatepostobjecturl', {
+    let res = await fetch(process.env.NEXT_PUBLIC_API_URL + '/auth/generatepostobjecturl', {
       method: 'GET',
       credentials: 'include',
     })
