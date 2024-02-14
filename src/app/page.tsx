@@ -14,21 +14,23 @@ export default function Home() {
   return (
     <div className={styles.home}>
       {
-        auth.isAuth ? (
+        !auth.isAuth ? (
+          <div className={styles.center}>
+            <h1>Welcome to the app</h1>
+            <button
+              onClick={() => {
+                router.push('/login')
+              }}
+            >Login</button>
+          </div>
+        ) : (
+
+
           <div className={styles.center}>
             <h1>Welcome {auth.user?.name}</h1>
             <button onClick={() => {
               router.push('/myfiles')
             }}>My Files</button>
-          </div>
-        ) : (
-          <div className={styles.center}>
-            <h1>Welcome to the app</h1>
-            <button
-             onClick={() => {
-              router.push('/login')
-            }}
-            >Login</button>
           </div>
         )
       }

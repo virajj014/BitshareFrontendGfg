@@ -69,7 +69,12 @@ const Navbar = () => {
 
     return (
         <div className={styles.navbar}>
-            <h1>BitS</h1>
+            <h1
+                onClick={() => {
+                    router.push('/')
+                }}
+                className={styles.logo}
+            >BitS</h1>
 
             {
                 auth.isAuth ?
