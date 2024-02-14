@@ -91,25 +91,27 @@ const Page = () => {
 
   return (
     <div className={styles.authpage}>
-      <h1>Login</h1>
-      <div className={styles.inputcontaner}>
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" value={formData.email} onChange={handleInputChange} />
-      </div>
-      <div className={styles.inputcontaner}>
-        <label htmlFor="password">Password</label>
-        <input type="password" name="password" id="password" value={formData.password} onChange={handleInputChange} />
-      </div>
+      <div className={styles.authcontainer}>
+        <h1>Login</h1>
+        <div className={styles.inputcontaner}>
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" id="email" value={formData.email} onChange={handleInputChange} />
+        </div>
+        <div className={styles.inputcontaner}>
+          <label htmlFor="password">Password</label>
+          <input type="password" name="password" id="password" value={formData.password} onChange={handleInputChange} />
+        </div>
 
-      <button
-        className={styles.button1}
-        type="button"
-        onClick={handleLogin}
-      >Login</button>
+        <button
+          className={styles.button1}
+          type="button"
+          onClick={handleLogin}
+        >Login</button>
 
-      <Link href="/forgotpassword">
-        Forgot Password?
-      </Link>
+        <Link href="/forgotpassword">
+          Forgot Password?
+        </Link>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.center button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1356d;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
